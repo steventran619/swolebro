@@ -1,0 +1,57 @@
+### POST Exercise 1
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Deadlift",
+    "reps": 10,
+    "weight": 155,
+    "unit": "lbs",
+    "date": "2020-08-10"
+}
+
+### POST Exercise 2
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bench Press",
+    "reps": 10,
+    "weight": 145,
+    "unit": "lbs",
+    "date": "2020-08-10"
+}
+
+### POST Exercise 3
+POST http://localhost:3000/exercises HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Squats",
+    "reps": 30,
+    "weight": 165,
+    "unit": "lbs",
+    "date": "2020-08-10"
+}
+
+### GET all exercises
+GET http://localhost:3000/exercises HTTP/1.1
+
+### Get an Exercise by ID
+GET http://localhost:3000/exercises/62f2c03d58dba26ac86facbf HTTP/1.1
+
+### UPDATE an exercise by ID
+PUT http://localhost:3000/exercises/62f2c03d58dba26ac86facbf HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Squats",
+    "reps": 20,
+    "weight": 175,
+    "unit": "lbs",
+    "date": "2020-09-08"
+}
+
+### DELETE an exercise by ID
+DELETE http://localhost:3000/exercises/62f2c03e58dba26ac86facc1 HTTP/1.1
+

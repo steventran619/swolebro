@@ -1,0 +1,417 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+/*   ----- Imports  -----  */
+/* Add fonts from the app's server */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/* ...or hosted services like Google Fonts 
+@import url(//fonts.googleapis.com/css?family=Font+Name);
+          */
+
+/* @import '../node_modules/modern-normalize/modern-normalize.css'; */
+/* npm install modern-normalize 
+            Resets elements for browser consistancy.  
+            http://nicolasgallagher.com/about-normalize-css/ 
+          */
+
+/* Component-specific stylesheets, if any 
+@import "component1.css";   
+          */
+
+/*   ----- Variables  -----  */
+:root {
+  --custom-color-name: ;
+  --custom-embellishment-name: ;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+  /* Can alternatively define in html {} or :root {} */
+  color: #5E6472;
+  background-color: #FAF3DD;
+  background-image: url(images/swolebro_transparent.png);
+  background-repeat: repeat-y;
+  background-size: 50%;
+  /* background-position: 100% 0%; */
+  background-position: right top;
+  /* height: 100px; */
+  margin: 2% 5%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: medium;
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+
+a:link {}
+
+a:hover {}
+
+a:active {}
+
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  margin: 4px 0 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #AED9E0;
+  padding: .5% 2%;
+  margin: 4px;
+  color: gray;
+  font-weight: bold;
+  border-radius: .5em;
+}
+
+/* Reverse the colors when hovering to give the user some interaction feedback.*/
+nav a:hover {
+  background-color: #7AC6F5;
+  color: black;
+  transition: 0.6s;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  background-color: hsla(34, 100%, 85%, 50%);
+  color: blue;
+  border: .5em outset salmon;
+  font-size: large;
+  font-weight: 300;
+  margin: 2em auto;
+  padding: 0em .8em;
+  border-radius: 1em;
+  min-width:20%;
+  max-width:60%;
+}
+
+main {
+  background-color: hsla(56, 100%, 71%, 65%);
+  background-size: 10%;
+  border: .2em ridge hsla(56, 100%, 71%, 1);
+  border-radius: .5em;
+  padding: 1em;
+  margin: 2em auto;
+  min-width:40%;
+  max-width:80%;
+}
+
+article {
+  margin: 0 auto;
+}
+
+footer {
+  display: inline-block;
+  background-color: #C3E5AE;
+  color: #343839;
+  border: .3em groove #97DBAE;
+  border-radius: 1em;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 1em;
+  padding: 0em .8em;
+
+}
+
+section {}
+
+#topic1 {}
+
+#topic2 {}
+
+#gallery1 {}
+
+#gallery2 {}
+
+div {}
+
+aside {}
+
+
+/*  -----  Typography  ----- */
+p {}
+
+br {}
+
+ol,
+ul,
+dl {}
+
+li {}
+
+dt {}
+
+dd {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+/* Define consistant font family.*/
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+abbr {}
+
+acronym {}
+
+address {}
+
+blockquote {}
+
+q {}
+
+cite {}
+
+em {}
+
+hr {}
+
+mark {}
+
+s {}
+
+span {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+
+code {}
+
+kbd {}
+
+samp {}
+
+var {}
+
+del {}
+
+ins {}
+
+/*  ----- Table ----- */
+table {
+  margin: 0 auto;
+  background: rgba(255, 166, 158, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 1em;
+  border: 1px solid rgba(255, 166, 158, 0.3);
+  max-width: 70%;
+}
+
+caption {
+  color: slategray;
+}
+
+thead {
+}
+
+tbody {}
+
+tfoot {}
+
+th {}
+
+tr, td, th {
+  border-radius: .4em;
+  border: #343839;
+  padding: .2ch;
+}
+
+colgroup {}
+
+data {}
+
+datalist {}
+
+
+/*  ----- Form ----- */
+form, input, select, button {
+  padding: .2em;
+  font-family: 'Lato', sans-serif;}
+
+legend {
+  margin: auto;
+}
+
+fieldset {
+  border: 0em;
+  margin: 1em auto;
+  padding: 1em;
+  /* From https://css.glass */
+  background: rgba(182, 229, 216, 0.52);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(9.4px);
+  max-width: fit-content;
+}
+
+label {
+  display: block;
+  margin: .2em;
+  font-weight: bold;
+}
+
+button {
+  padding: 5px 10px 5px 10px;
+  background-color: #8FDDE7;
+  color: #5E6472;
+  font-weight: bold;
+  border-radius: .5em;
+  margin: .5em 0em;
+}
+
+button:hover {
+  background-color: darkgray;
+  color: #8FDDE7;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+input {
+  justify-content: flex-end;
+  width: 13em;
+  border-radius: .5em;
+  text-align: center;
+  padding: .2em;
+  font-family: 'Lato', sans-serif;
+}
+
+
+output {}
+
+meter {}
+
+progress {}
+
+select {}
+
+optgroup {}
+
+option {}
+
+textarea {}
+
+/* ----- Media ----- */
+figure {}
+
+figcaption {}
+
+img {}
+
+svg {}
+
+picture {}
+
+source {}
+
+iframe {}
+
+video {}
+
+audio {}
+
+embed {}
+
+object {}
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.modifier:hover {
+  color: #9FB4FF;
+  cursor: pointer;
+}
+
+#appTitle {
+  background: hsl(37.3, 100%, 85.5%);
+  color: #FFA721;
+  display: inline-block;
+  border-radius: 2em;
+  font-size: 18px;
+  padding: 0em 2em;
+  margin-top: 5px;
+}
+
+#cancel-btn {
+  background-color: #B2A4FF;
+  color: #5E6472;
+}
+
+#cancel-btn:hover {
+  background-color: #5E6472;
+  color: #B2A4FF;
+}
+#edit-article {
+  background-color: #97DBAE;
+}
+
+
+.floatright {}
+
+.floatleft {}
+
+.center-middle {}
+
+.ten {}
+
+.twenty {}
+
+.thirty {}
+
+.forty {}
+
+.fifty {}
+
+.sixty {}
+
+.seventy {}
+
+.eighty {}
+
+.radius {}
+
+.circle {}
+
+.boxshadow {}
+
+.tshadow {}
+
+.gradient {}
+
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
