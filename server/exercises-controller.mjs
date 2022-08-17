@@ -37,7 +37,7 @@ app.get('/exercises/:_id', (req, res) => {
             } else {
                 res.status(404).json({ Error: 'Document not found' });
             }         
-         })
+        })
         .catch(error => {
             res.status(400).json({ Error: 'Request to retrieve document failed' });
         });
@@ -123,6 +123,6 @@ app.put('/exercises/:_id', (req, res) => {
 });
 
 
-app.listen(PORT || 3000, () => {
+app.listen(PORT || 3001, () => {
     console.log(`Server listening on port ${PORT}...`);
 });
