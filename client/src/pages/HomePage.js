@@ -27,7 +27,7 @@ function HomePage({ setExercise }) {
 
     // DELETE a exercise  
     const onDeleteExercise = async _id => {
-        const response = await fetch(`/exercises/${_id}`, { method: 'DELETE' });
+        const response = await fetch(`https://swolebro-api.herokuapp.com/exercises/${_id}`, { method: 'DELETE' });
         if (response.status === 204) {
             const getResponse = await fetch('/exercises');
             const exercises = await getResponse.json();

@@ -13,7 +13,7 @@ export const EditExercisePage = ({ exercise }) => {
     const history = useHistory();
 
     const editExercise = async () => {
-        const response = await fetch(`/exercises/${exercise._id}`, {
+        const response = await fetch(`https://swolebro-api.herokuapp.com/exercises/${exercise._id}`, {
             method: 'PUT',
             body: JSON.stringify({
                 name: name,
