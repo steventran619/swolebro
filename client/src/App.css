@@ -76,9 +76,9 @@ nav a:hover {
 
 /*  ----- Page layout blocks -----  */
 header {
-  background-color: hsla(34, 100%, 85%, 50%);
+  /* background-color: hsla(34, 100%, 85%, 50%); */
   color: blue;
-  border: .5em outset salmon;
+  /* border: .5em outset salmon; */
   font-size: large;
   font-weight: 300;
   margin: 2em auto;
@@ -89,9 +89,9 @@ header {
 }
 
 main {
-  background-color: hsla(56, 100%, 71%, 65%);
+  /* background-color: hsla(56, 100%, 71%, 65%); */
   background-size: 10%;
-  border: .2em ridge hsla(56, 100%, 71%, 1);
+  /* border: .2em ridge hsla(56, 100%, 71%, 1); */
   border-radius: .5em;
   padding: 1em;
   margin: 2em auto;
@@ -348,11 +348,11 @@ object {}
 }
 
 #appTitle {
-  background: hsl(37.3, 100%, 85.5%);
+  /* background: hsl(37.3, 100%, 85.5%); */
   color: #FFA721;
   display: inline-block;
   border-radius: 2em;
-  font-size: 18px;
+  font-size: 25px;
   padding: 0em 2em;
   margin-top: 5px;
 }
