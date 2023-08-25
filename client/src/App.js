@@ -24,7 +24,6 @@ function App() {
           <div id='appTitle'>
             <h1>💪 SwoleBro</h1>
           </div>
-          <p>Your exclusive workout companion. Transform your body from slow to swole today!</p>
         </header>
 
         <Navigation />
