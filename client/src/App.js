@@ -14,8 +14,8 @@ import EditExercisePage from './pages/EditExercisePage';
 
 // Define the function that renders the content in routes using State.
 function App() {
-
   const [exercise, setExercise] = useState([]);
+  const today = new Date();
 
   return (
     <>
@@ -43,7 +43,7 @@ function App() {
         </main>
 
         <footer>
-          <p>&copy; 2022 Summer | Steven Tran </p>
+          <p>&copy; {(today.getFullYear())} Steven Tran </p>
         </footer>
 
       </Router>
