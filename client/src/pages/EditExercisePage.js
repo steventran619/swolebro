@@ -14,7 +14,7 @@ export const EditExercisePage = ({ exercise }) => {
 
     const editExercise = async () => {
         // const response = await fetch(`/${exercise._id}`, {
-        const response = await fetch(`https://swolebrodb.onrender.com/${exercise._id}`, {
+        const response = await fetch(`/exercises/${exercise._id}`, {
             method: 'PUT',
             body: JSON.stringify({
                 name: name,
@@ -26,7 +26,7 @@ export const EditExercisePage = ({ exercise }) => {
             headers: { 'Content-Type': 'application/json', },
         });
         
-        if (response.status === 200) {
+        if (response.status === 201) {
             alert("Successfully modified your lift!");
         } else {
             const errMessage = await response.json();
